@@ -6,9 +6,14 @@ const TituloListagem = styled.h1`
 `;
 
 const ConatinerListagem = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 600px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 `;
 
 export{TituloListagem, ConatinerListagem}
